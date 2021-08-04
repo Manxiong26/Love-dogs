@@ -1,63 +1,54 @@
 * {
     box-sizing: border-box;
     }
- 
+  
   /* this makes the main content float left */
-[class*="col-"] {
+  [class*="col-"] {
     float: left;
     padding-left: 25px;
     }
-   
-body {
+  /* fonts for the body */
+  body {
     font-family: Arial, Helvetica, sans-serif;
     }
-
-h1 {
+  /* fonts for the headers */
+  h1 {
     font-family: 'Pacifico';
     color:rgb(92, 143, 236);
-}
-
-.menu .active {
+  }
+  /* shows which page is active on the sidebar nav */
+  .menu .active {
     background-color: #666;
     color: white;
-}
-
-.header {
+  }
+  /* styling header */
+  .header {
     background-image: linear-gradient(rgba(252, 252, 252, 0.5), 
     rgba(128, 121, 121, 0.5)), 
     url('Pictures/sophielight.jpeg');
     background-position: top 40% center;
     background-size: cover;
     height: 50vh;
-    margin-top: 0;
     background-color: #4e85eb;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    color: #000000;
     padding: 5px;
     text-align: center;
-    top: 0;
     font-size: 30px;
     }
-
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-    float:right;
-    }
-
-    hr.solid {
+  
+  /* this is the line section */
+  hr.solid {
         border-top: 3px solid #bbb;
       }
-
-.menu {
+  /* this makes the sidebar connected to the header banner */
+  .menu {
     margin-top: 0;
     padding: 0px 0px 0px 0px;
     background-color: #33b5e5;
     }
-
-.menu a {
+  /* makes a links not look like links  */
+  .menu a {
     padding: 10px 8px 8px 10px;
     background-color: #597dc0;
     color: #ffffff;
@@ -68,13 +59,13 @@ h1 {
     cursor: pointer;
     outline: none;
     }
-
-.menu a:hover {
+  /* shows a different color when hovers over the links */
+  .menu a:hover {
     background-color: #94afe0;
     }
   
   /* The dropdown Styling */
-.dropdown {
+  .dropdown {
     border: none;
     outline: none;
     list-style-type: none;
@@ -83,7 +74,7 @@ h1 {
     width: 100%;
     }
   
-.dropdown .dropbtn {
+  .dropdown .dropbtn {
     font-size: 20px;  
     border: none;
     outline: none;
@@ -93,42 +84,41 @@ h1 {
     font-family: 'Helvetica';
     }
   
-.dropdown:hover .dropbtn {
+  .dropdown:hover .dropbtn {
     background-color: #597dc0;
     }
   
-.dropdown-content {
+  .dropdown-content {
     display: none;
     background-color: #f9f9f9;
     width: 100%;
     }
   
-.dropdown-content a {
+  .dropdown-content a {
     color: white;
     text-decoration: none;
     background-color: #597dc0;   
     }
   
-.dropdown-content a:hover {
+  .dropdown-content a:hover {
     background-color: #ddd;
     }
   
-.dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content {
     display: block;
     }
-
-/* end of drop down styling */
-
-.nav {
+  /* end of drop down styling */
+  
+  .nav {
     margin:0;
     }
-/* responsive icon */
-.icon {
+  /* responsive icon */
+  .icon {
     display: none;
     padding: 15px;
     }
-
-@media screen and (max-width: 600px) {
+  /* responsive styling for the side bar that turns into menu bar */
+  @media screen and (max-width: 600px) {
     .row a, .dropdown .dropbtn {
       display: none;
     }
@@ -137,11 +127,12 @@ h1 {
       display: block;
       background-color: #4e85eb;
      color: white;
- 
+  
     }
   }
-
-@media screen and (max-width: 600px) {
+  
+  /* responsive styling for the social nav bar  */
+  @media screen and (max-width: 600px) {
     .row.responsive {
         position: absolute;
     }
@@ -152,7 +143,7 @@ h1 {
       display: block;
       text-align: left;
     }
-
+  
     .row.responsive .dropdown-content {
         position: relative;
     }
@@ -162,17 +153,17 @@ h1 {
       text-align: left;
     }
   }
-
-/* Add a black background color to the top navigation */
-.topnav {
+  
+  /* Add a blue background color to the top navigation */
+  .topnav {
     background-color: #4e85eb;
     overflow: hidden;
     margin-bottom: 0;
     bottom: 0;
     }
-
-/* Style the links inside the navigation bar */
-.topnav a {
+  
+  /* Style the links inside the social navigation bar */
+  .topnav a {
   float: right;
   color: #f2f2f2;
   text-align: center;
@@ -180,28 +171,28 @@ h1 {
   text-decoration: none;
   font-size: 17px;
     }
-
-.topnav .icon {
+  
+  .topnav .icon {
     float: left;
     }
-
-/* Change the color of links on hover */
-.topnav a:hover {
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
   background-color: #ddd;
   color: black;
     }
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
   float: right;
     }
-
+  
   /* For mobile phones: */
-[class*="col-"] {
+  [class*="col-"] {
     width: 100%;
     }
   
-@media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -213,7 +204,7 @@ h1 {
     .col-s-8 {width: 66.66%;}
     .col-s-9 {width: 75%;}
     }
-@media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}

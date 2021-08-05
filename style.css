@@ -24,6 +24,12 @@ body {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
   }
+/* Header styling */
+.header, h1 {
+  font-family: "Pacifico";
+  font-size: 50px;
+  color:#4e85eb;
+}
 
 /* Img styling */
 .img-right {
@@ -39,8 +45,13 @@ body {
 }
 
 .img-center {
-  height: 300px; 
+  height: 200px; 
   float: center; 
+  padding: 20px;
+}
+.img-center-big {
+  height: 300px;
+  float: center;
   padding: 20px;
 }
 

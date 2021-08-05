@@ -9,61 +9,84 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
 </head>
-<!-- Header -->
+<!-- Header  -->
+
 <body>
-  <div class="header">
-
-    <h1>Love for Dogs</h1>
-  </div>
-  <!-- social bar -->
-  <div class="topnav">
-    <a href="javascript:void(0);" class="icon" onclick="toggleFunction()">&#9776;</a>
-    <a href="https://www.linkedin.com/in/maneena-xiong-9a3227171/">
-      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-  </a>
-  <a href="https://www.facebook.com/">
-      <i class="fa fa-facebook-square" aria-hidden="true"></i>
-  </a>
-  <a href="https://github.com/Manxiong26">
-      <i class="fa fa-github" aria-hidden="true"></i>
-  </a>
-
-  </div>
-<!-- side bar -->
-  <div class="row" id="toprow">
-    <div class="col-3 col-s-3 menu">
-      <div class="nav">
-
-        <a href="index.html">Home</a>
-        <a href="info.html">Info</a>
-        <a href="moredogs.html">More Dog</a>
-        <div class="dropdown">
-          <button class="dropbtn">Breeds
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="schnoodle.html" class="active">Schnoodle</a>
-            <a href="schauzermix.html">SchnauzerMix</a>
-            <a href="schnauzer.html">Schnauzer</a>
-          </div>
-        </div>
-        <a href="about.html">About</a>
+  <main>
+    <header class="logo">
+      <div>
+        <h1>Love for Dogs</h1>
       </div>
-    </div>
-<!-- main content -->
-    <div class="col-6 col-s-9">
-      <h1>The Schnoodle Breed</h1>
-      <img src="Pictures/schnoodle.png" style="height: 500px; float: left; padding: 20px;">
+    </header>
+    <!-- Social nav bar  -->
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="toggleFunction()">&#9776;</a>
+      <a href="https://www.linkedin.com/in/maneena-xiong-9a3227171/">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.facebook.com/">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/Manxiong26">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliquant. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum.</p>
+
     </div>
+    <!-- Side bar -->
+    <div class="row" id="toprow">
+      <div class="col-3 col-s-3 menu">
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="info.html">Info</a>
+          <a href="moredogs.html">More Dog</a>
+          <div class="dropdown">
+            <button class="dropbtn">Breeds
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="drop">
+              <a href="schnoodle.html" class="active">Schnoodle</a>
+              <a href="schauzermix.html">SchnauzerMix</a>
+              <a href="schnauzer.html">Schnauzer</a>
+            </div>
+          </div>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <!-- main content -->
+      <div class="col-6 col-s-9">
+        <h1>The Schnoodle Breed</h1>
+        <img src="Pictures/schnoodle.png" style="height: 500px; float: left; padding: 20px;">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliquant. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.</p>
+      </div>
+  </main>
+  <!-- Function is for sidebar extension, I tried putting it in the client.js file however it caused
+    some asynchronous issue where user's will have to double click for extension to work -->
+  <!-- Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict -->
+  <script>
+    var dropdown = document.getElementsByClassName("dropbtn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

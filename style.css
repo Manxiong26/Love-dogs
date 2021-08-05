@@ -2,27 +2,52 @@
     box-sizing: border-box;
     }
   
-  /* this makes the main content float left */
-  [class*="col-"] {
+/* this makes the main content float left */
+[class*="col-"] {
     float: left;
     padding-left: 25px;
     }
-  /* fonts for the body */
-  body {
+/* fonts for the body */
+body {
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1240px;
+    margin: 0 auto; 
+	  float: none ; 
     }
-  /* fonts for the headers */
-  h1 {
+/* fonts for the headers */
+.logo-name {
     font-family: 'Pacifico';
     color:rgb(92, 143, 236);
+    font-size:50px;
+    text-align: center;
   }
-  /* shows which page is active on the sidebar nav */
-  .menu .active {
-    background-color: #666;
+
+/* Img styling */
+.img-right {
+  height: 300px; 
+  float: right; 
+  padding: 20px;
+}
+
+.img-left {
+  height: 300px; 
+  float: left; 
+  padding: 20px;
+}
+
+.img-center {
+  height: 300px; 
+  float: center; 
+  padding: 20px;
+}
+
+/* shows which page is active on the sidebar nav */
+.menu .active {
+    background-color: #94afe0;
     color: white;
   }
-  /* styling header */
-  .header {
+/* styling header */
+.logo {
     background-image: linear-gradient(rgba(252, 252, 252, 0.5), 
     rgba(128, 121, 121, 0.5)), 
     url('Pictures/sophielight.jpeg');
@@ -37,57 +62,43 @@
     font-size: 30px;
     }
   
-  /* this is the line section */
-  hr.solid {
+/* this is the line section */
+hr.solid {
         border-top: 3px solid #bbb;
       }
-  /* this makes the sidebar connected to the header banner */
-  .menu {
+/* this makes the sidebar connected to the header banner */
+.menu {
     margin-top: 0;
-    padding: 0px 0px 0px 0px;
-    background-color: #33b5e5;
-    }
-  /* makes a links not look like links  */
-  .menu a {
-    padding: 10px 8px 8px 10px;
+    padding: 0px;
+    padding-right: 0%;
+    width: 200px;
     background-color: #597dc0;
-    color: #ffffff;
+    }
+/* makes a links not look like links  */
+.menu a, .dropbtn{
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
+    color: #faf8f8;
     display: block;
+    border: none;
+    background: none;
+    width: 100%;
     text-align: left;
     cursor: pointer;
     outline: none;
     }
-  /* shows a different color when hovers over the links */
-  .menu a:hover {
-    background-color: #94afe0;
+/* shows a different color when hovers over the links */
+.menu a:hover, .dropdown:hover .dropbtn{
+    background-color: #94afe0;  
     }
   
-  /* The dropdown Styling */
-  .dropdown {
-    border: none;
-    outline: none;
-    list-style-type: none;
-    background-color: #597dc0;
-    color: #ffffff;
-    width: 100%;
-    }
-  
-  .dropdown .dropbtn {
-    font-size: 20px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 8px;
-    background-color: #597dc0;
-    font-family: 'Helvetica';
-    }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #597dc0;
-    }
-  
+/* The dropdown Styling */
+.fa-caret-down {
+    float: right;
+    padding-right: 25px;
+  }
+
   .dropdown-content {
     display: none;
     background-color: #f9f9f9;
@@ -100,25 +111,21 @@
     background-color: #597dc0;   
     }
   
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #ddd;
     }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-    }
-  /* end of drop down styling */
-  
-  .nav {
+
+/* end of drop down styling */
+.nav {
     margin:0;
     }
-  /* responsive icon */
-  .icon {
+/* responsive icon */
+.icon {
     display: none;
     padding: 15px;
     }
-  /* responsive styling for the side bar that turns into menu bar */
-  @media screen and (max-width: 600px) {
+/* responsive styling for the side bar that turns into menu bar */
+@media screen and (max-width: 600px) {
     .row a, .dropdown .dropbtn {
       display: none;
     }
@@ -131,8 +138,8 @@
     }
   }
   
-  /* responsive styling for the social nav bar  */
-  @media screen and (max-width: 600px) {
+/* responsive styling for the social nav bar  */
+@media screen and (max-width: 600px) {
     .row.responsive {
         position: absolute;
     }
@@ -154,16 +161,16 @@
     }
   }
   
-  /* Add a blue background color to the top navigation */
-  .topnav {
+/* Add a blue background color to the top navigation */
+.topnav {
     background-color: #4e85eb;
     overflow: hidden;
     margin-bottom: 0;
     bottom: 0;
     }
   
-  /* Style the links inside the social navigation bar */
-  .topnav a {
+/* Style the links inside the social navigation bar */
+.topnav a {
   float: right;
   color: #f2f2f2;
   text-align: center;
@@ -172,27 +179,27 @@
   font-size: 17px;
     }
   
-  .topnav .icon {
+.topnav .icon {
     float: left;
     }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
+/* Change the color of links on hover */
+.topnav a:hover {
   background-color: #ddd;
   color: black;
     }
   
-  /* Right-aligned section inside the top navigation */
-  .topnav-right {
+/* Right-aligned section inside the top navigation */
+.topnav-right {
   float: right;
     }
   
-  /* For mobile phones: */
-  [class*="col-"] {
+/* For mobile phones: */
+[class*="col-"] {
     width: 100%;
     }
   
-  @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -204,7 +211,7 @@
     .col-s-8 {width: 66.66%;}
     .col-s-9 {width: 75%;}
     }
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}

@@ -14,20 +14,34 @@ body {
     margin: 0 auto; 
 	  float: none ; 
     }
+/* styling header */
+.logo {
+  background-image: linear-gradient(rgba(252, 252, 252, 0.5), 
+  rgba(128, 121, 121, 0.5)), 
+  url('../Pictures/sophielight.jpeg');
+  background-position: top 40% center;
+  background-size: cover;
+  height: 25vh;
+  width: 100%;
+  background-color: #4e85eb;
+  text-align: center;
+  font-size: 30px;
+  }
+
 /* fonts for the headers */
 .logo-name {
     font-family: 'Pacifico';
     color:rgb(92, 143, 236);
     font-size:45px;
-    text-align: left;
-    padding: 65px;
+    text-align: center;
+    padding: 10px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
   }
 /* Header styling */
 .header, h1 {
   font-family: "Pacifico";
-  font-size: 50px;
+  font-size: 30px;
   color:#4e85eb;
 }
 
@@ -60,21 +74,7 @@ body {
     background-color: #94afe0;
     color: white;
   }
-/* styling header */
-.logo {
-    background-image: linear-gradient(rgba(252, 252, 252, 0.5), 
-    rgba(128, 121, 121, 0.5)), 
-    url('Pictures/sophielight.jpeg');
-    background-position: top 45% center;
-    background-size: cover;
-    height: 25vh;
-    width: 100%;
-    background-color: #4e85eb;
-    
-    text-align: center;
-    font-size: 30px;
-    }
-  
+
 /* this is the line section */
 hr.solid {
         border-top: 3px solid #bbb;

@@ -18,8 +18,8 @@ body {
 .logo {
   background-image: linear-gradient(rgba(252, 252, 252, 0.5), 
   rgba(128, 121, 121, 0.5)), 
-  url('../Pictures/sophielight.jpeg');
-  background-position: top 40% center;
+  url('../Pictures/lightsophie.png');
+  background-position: top 25% center;
   background-size: cover;
   height: 25vh;
   width: 100%;
@@ -32,9 +32,9 @@ body {
 .logo-name {
     font-family: 'Pacifico';
     color:rgb(92, 143, 236);
-    font-size:45px;
+    font-size:40px;
     text-align: center;
-    padding: 10px;
+    padding: 25px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
   }
@@ -59,7 +59,7 @@ body {
 }
 
 .img-center {
-  height: 200px; 
+  height: 155px; 
   float: center; 
   padding: 20px;
 }
